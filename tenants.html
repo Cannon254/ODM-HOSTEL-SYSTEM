@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            success: "#16a34a",
+            warning: "#f59e0b",
+            danger: "#dc2626",
+          },
+        },
+      },
+    };
+  </script>
+
+  <title>Tenants</title>
+</head>
+
+<body class="bg-gray-50 p-6">
+
+  <!-- PAGE HEADER -->
+  <div class="mb-6 flex justify-between items-center">
+    <div>
+      <h1 class="text-3xl font-semibold">Tenants</h1>
+      <p class="text-gray-500 mt-1">List of all registered hostel tenants</p>
+    </div>
+
+    <button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700">
+      <i data-lucide="user-plus" class="w-4 h-4"></i>
+      Add Tenant
+    </button>
+  </div>
+
+  <!-- SEARCH BAR -->
+  <div class="mb-4">
+    <input 
+      type="text"
+      placeholder="Search tenant by name, room, or ID..."
+      class="w-full px-4 py-2 rounded-lg border shadow-sm focus:ring-2 focus:ring-primary"
+    />
+  </div>
+
+  <!-- TENANTS TABLE -->
+  <div class="bg-white rounded-xl shadow overflow-hidden border">
+    <table class="w-full text-sm">
+      <thead class="bg-gray-100 text-gray-700">
+        <tr>
+          <th class="p-3 text-left">Tenant ID</th>
+          <th class="p-3 text-left">Name</th>
+          <th class="p-3 text-left">Block</th>
+          <th class="p-3 text-left">Room</th>
+          <th class="p-3 text-left">Phone</th>
+          <th class="p-3 text-left">Status</th>
+          <th class="p-3 text-right">Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <!-- TENANT: ACTIVE -->
+        <tr class="border-t hover:bg-gray-50">
+          <td class="p-3">TN001</td>
+          <td class="p-3">John Doe</td>
+          <td class="p-3"> E</td>
+          <td class="p-3">A102</td>
+          <td class="p-3">0712345678</td>
+          <td class="p-3">
+            <span class="px-2 py-1 text-xs rounded-full bg-success/20 text-success">Active</span>
+          </td>
+          <td class="p-3 text-right">
+            <button class="text-primary hover:underline mr-3">Edit</button>
+            <button class="text-danger hover:underline">Remove</button>
+          </td>
+        </tr>
+
+        <!-- TENANT: PENDING -->
+        <tr class="border-t hover:bg-gray-50">
+          <td class="p-3">TN002</td>
+          <td class="p-3">Sarah Kim</td>
+          <td class="p-3"> A</td>
+          <td class="p-3">A103</td>
+          <td class="p-3">0798765432</td>
+          <td class="p-3">
+            <span class="px-2 py-1 text-xs rounded-full bg-warning/20 text-warning">Pending</span>
+          </td>
+          <td class="p-3 text-right">
+            <button class="text-primary hover:underline mr-3">Edit</button>
+            <button class="text-danger hover:underline">Remove</button>
+          </td>
+        </tr>
+
+        <!-- TENANT: LEFT -->
+        <tr class="border-t hover:bg-gray-50">
+          <td class="p-3">TN003</td>
+          <td class="p-3">Tom White</td>
+          <td class="p-3"> B</td>
+          <td class="p-3">A108</td>
+          <td class="p-3">0744444444</td>
+          <td class="p-3">
+            <span class="px-2 py-1 text-xs rounded-full bg-danger/20 text-danger">Left</span>
+          </td>
+          <td class="p-3 text-right">
+            <button class="text-primary hover:underline mr-3">Edit</button>
+            <button class="text-danger hover:underline">Remove</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FOOTER SPACING -->
+  <div class="h-10"></div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</button>
+
+</body>
+</html>
+
+
+

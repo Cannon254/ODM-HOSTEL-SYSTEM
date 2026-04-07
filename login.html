@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ODM Hostel Management System | Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex items-center justify-center relative">
+
+  <!-- Fullscreen Background Image -->
+  <div class="fixed inset-0 bg-cover bg-center z-0" 
+       style="background-image: url('/mnt/data/610ce6e9-163f-4591-a14f-7e5c411adf2c.jpg');"></div>
+  <div class="fixed inset-0 bg-black/40 z-0"></div> <!-- optional dark overlay -->
+
+  <!-- Login Card -->
+  <div class="relative z-10 w-full max-w-md bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+    <h1 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">ODM Hostel Login</h1>
+
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Email</label>
+        <input type="email" id="email" required 
+               class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 shadow-sm focus:ring focus:ring-blue-400 focus:border-blue-400" 
+               placeholder="your email" />
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Password</label>
+        <input type="password" id="password" required 
+               class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 shadow-sm focus:ring focus:ring-blue-400 focus:border-blue-400" 
+               placeholder="••••••••" />
+      </div>
+
+      <button type="submit" 
+              class="w-full py-2 px-4 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold">
+        Log In
+      </button>
+    </form>
+
+    <p class="mt-4 text-center text-sm text-gray-100 dark:text-gray-300">
+      &copy; 2025 ODM Hostel Management
+    </p>
+  </div>
+
+  <script src="theme.js"></script>
+</body>
+</html>

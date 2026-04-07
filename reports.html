@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <title>Reports - ODM Hostel</title>
+</head>
+
+<body class="bg-gray-50 p-6">
+
+  <!-- PAGE TITLE -->
+  <div class="mb-6">
+    <h1 class="text-3xl font-semibold">Reports</h1>
+    <p class="text-gray-500 mt-1">Download and view hostel performance reports</p>
+  </div>
+
+  <!-- SUMMARY CARDS -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+    
+    <div class="bg-white p-5 rounded-xl shadow">
+      <div class="flex justify-between items-center">
+        <p class="text-gray-500 text-sm">Total Revenue (This Year)</p>
+        <i data-lucide="wallet" class="text-gray-700"></i>
+      </div>
+      <p class="text-2xl font-bold mt-2">KES 4.8M</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-xl shadow">
+      <div class="flex justify-between items-center">
+        <p class="text-gray-500 text-sm">Total Tenants</p>
+        <i data-lucide="users" class="text-gray-700"></i>
+      </div>
+      <p class="text-2xl font-bold mt-2">216</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-xl shadow">
+      <div class="flex justify-between items-center">
+        <p class="text-gray-500 text-sm">Pending Maintenance</p>
+        <i data-lucide="wrench" class="text-gray-700"></i>
+      </div>
+      <p class="text-2xl font-bold mt-2">12</p>
+    </div>
+
+  </div>
+
+  <!-- REPORT DOWNLOADS -->
+  <div class="bg-white p-6 rounded-xl shadow mb-8">
+    <h2 class="text-lg font-semibold mb-4">Download Reports</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <div class="border p-4 rounded-lg">
+        <h3 class="font-semibold">Monthly Report</h3>
+        <p class="text-sm text-gray-600 mt-1">Revenue, occupancy, and expenses for the month.</p>
+        <button class="mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg flex items-center gap-2">
+          <i data-lucide="download" class="w-4"></i> Download PDF
+        </button>
+      </div>
+
+      <div class="border p-4 rounded-lg">
+        <h3 class="font-semibold">Yearly Report</h3>
+        <p class="text-sm text-gray-600 mt-1">Annual hostel performance overview.</p>
+        <button class="mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg flex items-center gap-2">
+          <i data-lucide="download" class="w-4"></i> Download PDF
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ACTIVITY LOG TABLE -->
+  <div class="bg-white p-6 rounded-xl shadow">
+    <h2 class="text-lg font-semibold mb-4">Activity Summary</h2>
+
+    <table class="w-full text-sm">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="p-2 text-left">Date</th>
+          <th class="p-2 text-left">Activity</th>
+          <th class="p-2 text-left">Details</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="border-b">
+          <td class="p-2">Dec 10, 2024</td>
+          <td class="p-2">Payment Recorded</td>
+          <td class="p-2">Tenant A105 paid KES 12,000</td>
+        </tr>
+
+        <tr class="border-b">
+          <td class="p-2">Dec 09, 2024</td>
+          <td class="p-2">Maintenance Update</td>
+          <td class="p-2">Window repair completed in B203</td>
+        </tr>
+
+        <tr class="border-b">
+          <td class="p-2">Dec 07, 2024</td>
+          <td class="p-2">Room Allocation</td>
+          <td class="p-2">New tenant assigned to A108</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
